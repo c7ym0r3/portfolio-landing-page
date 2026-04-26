@@ -1,0 +1,93 @@
+.welcome__text .outlined {
+  color: $color-white;
+}
+
+.welcome__social {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+}
+
+.welcome__social button {
+  background-color: $color-white;
+  color: $color-black;
+  border: 2px solid $color-black;
+
+  width: 60px;
+  height: 60px;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.welcome .container {
+  display: flex;
+  margin-top: 60px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome__text {
+  margin-top: 130px;
+  max-width: 600px;
+}
+.welcome__title {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.welcome__desc {
+  color: $color-zinc-500;
+  margin-bottom: 94px;
+}
+.welcome__social button:hover {
+  background-color: $color-black;
+  color: $color-white;
+}
+.welcome__banner {
+  width: 100%;
+}
+
+@media (max-width: 1222px) {
+  .welcome__text {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome .container {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+  }
+
+  .welcome__text {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .welcome__title {
+    margin-bottom: 32px;
+  }
+
+  .welcome__desc {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -2%;
+
+    margin-bottom: 32px;
+  }
+
+  .welcome__social button {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+  }
+
+  .welcome__social button svg {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+$color-white: #fff;
+$color-black: #000;
+$color-neutral: #404040;
+
+$color-zinc-100: #f4f4f5;
+$color-zinc-200: #e4e4e7;
+$color-zinc-300: #d4d4d8;
+$color-zinc-500: #71717a;
+$color-zinc-800: #27272a;
+
+$color-error: #ef4444;
+
+$container-max-width: 1280px;
+$container-padding: 10px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", sans-serif;
+}
+
+input {
+  font-family: "Sora", sans-serif;
+  border: none;
+}
+
+.container {
+  max-width: calc($container-max-width + $container-padding * 2);
+  margin-inline: auto;
+  padding-inline: $container-padding;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .container {
+    $container-padding: 16px;
+  }
+}

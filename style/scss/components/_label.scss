@@ -1,0 +1,36 @@
+.label {
+  display: inline-block;
+  padding: 18px 24px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 4px;
+  border: 1.4px $color-black solid;
+
+  max-width: 500px;
+  min-height: 56px;
+}
+
+.label-input {
+  color: $color-black;
+  border-color: $color-neutral;
+  width: 100%;
+}
+
+.label:hover {
+  background-color: $color-zinc-100;
+}
+
+.label:hover .label-input {
+  background-color: $color-zinc-100;
+}
+
+.label-input:active,
+.label-input:focus {
+  border: none;
+}
+
+.label-input:focus-visible {
+  outline: none;
+  outline-offset: none;
+}
