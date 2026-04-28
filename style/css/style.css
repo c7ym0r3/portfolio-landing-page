@@ -277,9 +277,17 @@ button:focus {
   margin-bottom: 94px;
 }
 
+.welcome__social button {
+  transition: color 0.2s ease-in, background-color 0.2s ease-in;
+}
+
 .welcome__social button:hover {
   background-color: #000;
-  color: #fff;
+  fill: #fff;
+}
+
+.welcome__social button:hover svg path {
+  fill: #fff;
 }
 
 .welcome__banner {
@@ -317,5 +325,60 @@ button:focus {
   .welcome__social button svg {
     width: 20px;
     height: 20px;
+  }
+}
+.skills {
+  margin-top: 80px;
+}
+
+.skills__title {
+  text-align: center;
+}
+
+.skills__list {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 186px);
+  justify-content: space-between;
+  row-gap: 40px;
+}
+
+.skills__list-item {
+  aspect-ratio: 1;
+  align-items: center;
+  border: 2px solid #000;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  row-gap: 32px;
+  flex-direction: column;
+  font-weight: 800;
+  transition: color, background-color 0.2s ease-in;
+}
+
+.skills__list-item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.skills__list-item:hover svg {
+  filter: invert(1);
+}
+
+@media (max-width: 1000px) {
+  .skills__list {
+    grid-template-columns: repeat(3, 170px);
+    justify-content: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 748px) {
+  .skills__list {
+    grid-template-columns: repeat(2, 160px);
+    justify-content: center;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

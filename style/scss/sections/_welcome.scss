@@ -43,10 +43,21 @@
   color: $color-zinc-500;
   margin-bottom: 94px;
 }
+
+.welcome__social button {
+  transition:
+    color 0.2s ease-in,
+    background-color 0.2s ease-in;
+}
 .welcome__social button:hover {
   background-color: $color-black;
-  color: $color-white;
+  fill: $color-white;
 }
+
+.welcome__social button:hover svg path {
+  fill: $color-white;
+}
+
 .welcome__banner {
   width: 100%;
 }
