@@ -55,3 +55,10 @@
     column-gap: 40px;
   }
 }
+
+@media (max-width: 320px) {
+  .skills__list {
+    grid-template-columns: repeat(2, 100px);
+    justify-content: center;
+  }
+}
